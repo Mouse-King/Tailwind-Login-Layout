@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleckschool | Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-[#F8F3EE] md:bg-white">
+  <header>
+    <img class="hidden md:block" src="assets/images/logo.png" alt="logo">
+    <img class="md:hidden w-full h-auto" src="assets/images/logo-mobile.png" alt="logo">
+  </header>
+
+  <main class="flex flex-col md:flex-row md:gap-7 mt-10 md:mt-32 md:pr-7">
+    <ul class="hidden w-14 self-start md:flex flex-col items-center gap-6 py-4 rounded-tr-xl rounded-br-xl bg-[#A86435]">
+      <li>
+        <button>
+          <img src="assets/images/logout.png" alt="logout">
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="assets/images/playlist.png" alt="playlist">
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="assets/images/list-check.png" alt="list-check">
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="assets/images/drafts.png" alt="drafts">
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="assets/images/plus.png" alt="plus">
+        </button>
+      </li>
+    </ul>
+
+    <section class="flex-grow flex items-center justify-center p-4 md:py-7 md:rounded-xl bg-[#F8F3EE]">
+      <form class="max-w-[365px] mx-auto">
+        <h1 class="mb-[26px] text-2xl font-bold leading-normal text-[#A86435]">
+          Herzlich Willkommen<br>
+          auf Fleckschool
+        </h1>
+        <h2 class="mb-2 font-bold text-[#201F21]">LOGIN für Kursleiter</h2>
+        <p class="mb-6">
+          Um einen Kurs anlegen zu können, müssen Sie sich zuerst registrieren lassen. Sie erhalten
+          anschließend per E-Mail Ihr Passwort.
+        </p>
+
+        <label class="absolute px-1.5 py-0.5 rounded text-sm bg-white translate-x-3 -translate-y-3" for="name">Name</label>
+        <input type="text" class="w-full h-12 mb-7 px-3 border border-[#0000002E] rounded-lg" id="name">
+
+        <label class="absolute px-1.5 py-0.5 rounded text-sm bg-white translate-x-3 -translate-y-3" for="email">E-Mail</label>
+        <input type="email" class="w-full h-12 mb-4 px-3 border border-[#0000002E] rounded-lg" id="email">
+
+        <button class="flex items-center gap-6 ml-auto px-5 py-3 bg-[#7A7A7A] rounded-xl">
+          <img src="assets/images/check.png" alt="check">
+          <span class="text-lg text-white">Kursleiter registrieren</span>
+        </button>
+      </form>
+    </section>
+
+    <section class="flex-grow flex items-center justify-center p-4 md:py-7 md:rounded-xl bg-[#F8F3EE]">
+      <form class="max-w-[365px] mx-auto">
+        <h2 class="font-bold text-[#201F21]">Sie sind bereits als Kursleiter registriert</h2>
+        <p class="mb-6">
+          Dann loggen Sie sich bitte hier ein:
+        </p>
+
+        <label class="absolute px-1.5 py-0.5 rounded text-sm bg-white translate-x-3 -translate-y-3" for="email">E-Mail</label>
+        <input type="email" class="w-full h-12 mb-7 px-3 border border-[#0000002E] rounded-lg" id="email">
+
+        <label class="absolute px-1.5 py-0.5 rounded text-sm bg-white translate-x-3 -translate-y-3" for="password">Passwort</label>
+        <input type="password" class="w-full h-12 mb-4 px-3 border border-[#0000002E] rounded-lg" id="name">
+
+        <button class="mb-8 flex items-center gap-6 ml-auto px-5 py-3 bg-[#6DA633] rounded-xl">
+          <img src="assets/images/login.png" alt="login">
+          <span class="text-lg text-white">Einloggen</span>
+        </button>
+
+        <div class="flex items-center gap-1.5">
+          <label for="superCheck">Login als Superuser</label>
+          <input type="checkbox" id="superCheck">
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
